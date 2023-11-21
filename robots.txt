@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://niceas.gnhub.de/sitemap.xml

@@ -1,0 +1,116 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: #1f1f1f;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+}
+
+.blur-background {
+  background-image: url('../img/background.gif');
+
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.container {
+      position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+      opacity: 0;
+      transition: opacity 1s ease;
+}
+
+.container.loaded {
+      opacity: 1;
+}
+
+.details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+.profile {
+      width: 80%;
+      max-width: 400px;
+      padding: 5%;
+      background-color: #242424;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      color: white;
+      margin: auto;
+}
+
+.button {
+      display: inline-block;
+      margin-right: 5px;
+      margin-top: 3px;
+      padding: 3px 8px;
+      border-radius: 3px;
+      background-color: #760FE6;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+}
+
+.buttons {
+      margin-top: 10px;
+}
+
+.button img {
+      width: 16px;
+      height: 16px;
+      vertical-align: middle;
+      margin-right: 8px;
+      margin-bottom: 1px;
+}
+
+.button:hover {
+      filter: brightness(1.1);
+      cursor: pointer;
+}
+
+.avatar {
+      width: 40%;
+      max-width: 200px;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 20px;
+}
+
+h1 {
+      margin: 0;
+      font-size: 24px;
+}
+
+h4 {
+      margin: 0;
+      font-size: 16px;
+}
+
+p {
+      margin-bottom: 10px;
+}

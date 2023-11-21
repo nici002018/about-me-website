@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Niceas official profile website">
+
+      <title>Loading...</title>
+      <link type="image/webp" href="https://gnhub.de/assets/logo.webp" rel="icon">
+      <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+      <div class="container">
+            <div class="profile">
+                  <img alt="Avatar" class="avatar">
+                  <div class="details">
+                        <h1 id="Username"></h1>
+                  </div>
+                  <p>Hello, I am the owner of GNHub.</p>
+                  <div class="buttons">
+                        <div class="button" onclick="redirectTo('https://gnhub.de')"><img src="https://gnhub.de/assets/logo.webp" alt="Icon"> GNHub</div>
+                        <div class="button" onclick="redirectTo('https://discord.gnhub.de')"><img src="https://gnhub.de/assets/discord-icon.png" alt="Icon"> Discord</div>
+                        <div class="button" onclick="redirectTo('https://github.com/nici002018')"><img src="https://gnhub.de/assets/github-icon.png" alt="Icon"> GitHub</div>
+                  </div>
+            </div>
+      </div>
+
+      <div class="blur-background"></div>
+
+      <script>
+            function redirectTo(url) {
+                  window.location.href = url;
+            }
+
+            function setRoundedFavicon(avatar) {
+                  const canvas = document.createElement('canvas');
+                  const ctx = canvas.getContext('2d');
+                  const img = new Image();
+
+                  img.crossOrigin = "Anonymous";
+
+                  img.onload = function () {
+                        canvas.width = img.width;
+                        canvas.height = img.height;
+                        ctx.beginPath();
+                        ctx.arc(
+                              img.width / 2,
+                              img.height / 2,
+                              Math.min(img.width, img.height) / 2,
+                              0,
+                              Math.PI * 2
+                        );
+                        ctx.closePath();
+                        ctx.clip();
+                        ctx.drawImage(img, 0, 0, img.width, img.height);
+                        const roundedAvatar = canvas.toDataURL();
+                        document.querySelector("link[rel='icon']").href = roundedAvatar;
+                  };
+
+                  img.src = avatar;
+            }
+
+                  const username = "Niceas";
+                  const avatar = "https://cdn.discordapp.com/avatars/773287215052357633/84db6e0b7542b2f2247f0f0d2d3f4890.webp?size=4096";
+
+                  document.querySelector(".avatar").src = avatar;
+                  document.getElementById("Username").innerText = username;
+                  document.title = `${username}'s profile`;
+                  document.querySelector(".container").classList.add("loaded");
+                  setRoundedFavicon(avatar);
+      </script>
+</body>
+
+</html>
