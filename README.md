@@ -24,7 +24,7 @@ cd about-me-website
 npm run start
 
 # Option 1.
-node server/server.js
+node index.js
 
 # Option 2.
 npm install pm2 -g && pm2 install pm2-logrotate
