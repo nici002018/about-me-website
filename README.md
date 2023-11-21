@@ -23,10 +23,8 @@ npm run start
 node server/server.js
 
 # Option 2.
-# Install PM2 if you don't have it:
 npm install pm2 -g && pm2 install pm2-logrotate
 
 # Start Server
 pm2 start index.js --name about-me-website
-
 ```
