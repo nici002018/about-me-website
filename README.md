@@ -9,7 +9,7 @@ https://niceas.gnhub.de
 # 🔧 How to Install 
 
 the default port is 6765 but you can easily change it in index.js
-http://localhost:6765
+the normal address: http://localhost:6765
 
 Requirements:
 
