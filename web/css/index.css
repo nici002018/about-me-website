@@ -10,30 +10,30 @@ body {
 }
 
 .blur-background {
-  background-image: url('../img/background.gif');
+      background-image: url('../img/background.gif');
 
-  filter: blur(6px);
-  -webkit-filter: blur(6px);
+      filter: blur(6px);
+      -webkit-filter: blur(6px);
 
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
 
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
 }
 
 .container {
       position: relative;
-  z-index: 1;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+      z-index: 1;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
       opacity: 0;
       transition: opacity 1s ease;
 }
