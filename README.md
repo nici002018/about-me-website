@@ -1,10 +1,10 @@
+# 📍 New About Me Website
+Check out Niceas new About Me website: https://github.com/nici002018/nici002018/tree/Website
+
 # ❓ about-me-website
 is a simple self-hosted about me website
 
 ![image](https://github.com/nici002018/about-me-website/assets/105665457/c737e349-1a2e-4dc0-b954-2cec117a4dc0)
-
-# 🔎 Live Demo
-https://niceas.gnhub.de
 
 # 🔧 How to Install 
 
